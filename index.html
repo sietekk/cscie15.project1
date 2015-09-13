@@ -8,6 +8,15 @@
     <title>Project 1</title>
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+      .container {
+        margin: auto;
+        width: 80%;
+      }
+      .panel-padding {
+        margin: 10px auto 10px auto;
+      }
+    </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -16,28 +25,40 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="/img/portrait.jpg">
-        </div>
-        <div class="media-body">
-          <div class="page-header">
-            <h1>Michael Conroy <small>Dynamic Web Applications Portfolio</small></h1>
+    <div class="container-fluid container">
+      <!-- Navbar Section -->
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation...</span>
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+            <a class="navbar-brand" href="#">Projects</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Project 1</a></li>
+              <li><a href="http://p2.sietekk.com">Project 2</a></li>
+              <li><a href="http://p3.sietekk.com">Project 3</a></li>
+              <li><a href="http://p4.sietekk.com">Project 4</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-      <nav class="navbar navbar-default">
-        <div class="navbar-header">
-          <h4 class="navbar-brand">Projects</h4>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href="http://p2.sietekk.com">Project 2</a></li>
-          <li><a href="http://p3.sietekk.com">Project 3</a></li>
-          <li><a href="http://p4.sietekk.com">Project 4</a></li>
-        </ul>
       </nav>
-      <div class="panel panel-info">
+      <!-- Header and Image Section -->
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object" src="img/portrait.jpg">
+        </div>
+        <div class="media-body">
+            <div class="page-header">
+              <h1>Michael Conroy <small>Dynamic Web Applications Portfolio</small></h1>
+            </div>
+        </div>
+      </div>
+      <!-- About Me Section -->
+      <div class="panel panel-info panel-padding">
         <div class="panel-heading">
           <h4 class="panel-title">About Me</h4>
         </div>
@@ -45,6 +66,12 @@
           <p>I am a full stack software engineer with Prometheus Research in New Haven, CT. I live in East Haven,
              CT with my wife Nicole, our six month old daughter Victoria, and our two dogs, Jade and Pepper. I
              really enjoy web development and look forward to working with PHP and Laravel.</p>
+        </div>
+      </div>
+      <!-- Questions Section -->
+      <div class="panel panel-info panel-padding">
+        <div class="panel-heading">
+          <h4 class="panel-title">Questions</h4>
         </div>
         <ul class="list-group">
           <li class="list-group-item">
